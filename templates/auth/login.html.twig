@@ -1,0 +1,8 @@
+{% extends 'app.html.twig' %}
+
+{% block content %}
+    <h2>Login</h2>
+    {{ form_open('post', {'route': ['auth.login.check']}) }}
+        {% include 'auth/form.html.twig' %}
+    {{ form_close() }}
+{% endblock %}

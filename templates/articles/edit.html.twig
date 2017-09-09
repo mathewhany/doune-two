@@ -1,0 +1,8 @@
+{% extends 'app.html.twig' %}
+
+{% block content %}
+    <h2>Edit Article</h2>
+    {{ form_model(article, 'put', {'route': ['articles.update', {'id': article.id}]}) }}
+    	{% include 'articles/form.html.twig' %}
+    {{ form_close() }}
+{% endblock %}

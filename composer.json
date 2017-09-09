@@ -1,0 +1,21 @@
+{
+    "require": {
+        "slim/slim": "~2.6",
+        "slim/views": "^0.1.3",
+        "twig/twig": "^1.18",
+        "illuminate/database": "~5.0.28"
+    },
+    "autoload": {
+        "classmap": [
+            "app/models"
+        ],
+        "files": [
+            "app/Doune/Helpers/functions.php",
+            "app/Bestawys/Support/helpers.php"
+        ],
+        "psr-4": {
+            "Doune\\": "app/Doune",
+            "Bestawys\\": "app/Bestawys"
+        }
+    }
+}

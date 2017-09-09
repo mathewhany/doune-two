@@ -1,0 +1,24 @@
+<ul>
+    <li class="logo">{{ settings.title }}</li>
+
+    <li><a href="{{ siteUrl('/') }}">Home</a></li>
+
+    {% if logged_in() %}
+        <li>
+            <a href="{{ urlFor('articles.create') }}">Create article</a>
+        </li>        
+    {% endif %}
+
+    {% if admin() %}
+        <li><a href="{{ urlFor('settings.edit') }}">Settings</a></li>
+    {% endif %}
+</ul>
+
+<ul class="auth">
+    {% if logged_in() %}
+        <li><a href="{{ urlFor('auth.logout') }}">Logout</a></li>
+    {% else %}
+        <li><a href="{{ urlFor('auth.login') }}">Login</a></li>        
+        <li><a href="{{ urlFor('auth.register') }}">Register</a></li>
+    {% endif %}
+</ul>

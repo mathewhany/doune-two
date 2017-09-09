@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Doune » Installation</title>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400' rel='stylesheet' type='text/css'>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                font-family: 'Josefin Slab', serif;
+                font-size: 20px
+            }
+            body {
+                background: #ecf0f1;
+                color: #7f8c8d;
+            }
+            h1 {
+                padding: 1em;
+                background-color: #2980b9;
+                color: #ecf0f1;
+                text-align: center;
+                font-size: 200%;
+                margin-bottom: 1em;
+            }
+            h1 small {
+                display: block;
+                font-size: 70%;
+                font-weight: 300;
+            }
+            .container {
+                margin: 1em;
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 1em;
+                font-size: 180%;
+                color: #2980b9;
+            }
+            .msg h2 {
+                font-size: 280%;
+                margin-bottom: .5em;
+            }
+            .msg p,
+            .msg a {
+                font-size: 150%;
+                margin: 1em;
+            }
+            .msg a {
+                float: right;
+                text-decoration: none;
+                font-weight: bold;
+                background: #2980b9;
+                color: #ecf0f1;
+                padding: 7px;
+            }
+            form {
+                width: 99%; 
+            }
+            form div {
+                margin-bottom: 1em;
+            }
+            form div label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 6px;
+            }
+            form div input {
+                width: 100%;
+                border: 2.5px solid #7f8c8d;
+                color: #2980b9;
+            }
+            form div input:hover,
+            form div input:focus {
+                border-color: #2980b9;
+            }
+            form div input, form div button {
+                padding: 7px;
+                outline: 0;
+                font-family: 'Josefin Slab', serif;
+                font-size: 22px;
+            }
+            form div button {
+                border: 0;
+                font-weight: bold;
+                background: #2980b9;
+                color: #ecf0f1;
+                float: right;
+            }
+            .clearfix:after { 
+               content: "."; 
+               visibility: hidden; 
+               display: block; 
+               height: 0; 
+               clear: both;
+            }
+            .copyright {
+                text-align: center;
+                margin: 1.5em;
+            }
+            .alert {
+                padding: 1em;
+                border-radius: 5px;
+                margin: 1.5em auto 1.5em;
+                color: rgba(0, 0, 0, .4);
+                box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+            }
+            .alert-error {
+                background-color: #c0392b;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Doune
+            <small>Installation Page</small>
+        </h1>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="clearfix"></div>
+        <div class="copyright">
+            Mathew Hany &copy; 2015
+        </div>
+    </body>
+</html>

@@ -1,0 +1,233 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+html {
+    font-family: 'Lato', Tahoma, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+a:hover {
+    color: #003399;
+}
+
+body {
+    background: #f0f0f0;
+}
+
+header {
+    margin: 3em;
+    font-weight: normal;
+    color: ;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em;
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: inline-block;
+}
+
+header ul li {
+    padding: 7px 1em 7px 1em;
+    display: inline-block;
+    float: left;
+    line-height: 35px;
+}
+
+header ul .logo {
+    font-size: 28px;
+}
+
+header ul li a {
+    font-size: 18px;
+}
+
+header ul li a:hover {
+}
+
+header .auth {
+    float: right;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.container {
+    margin: 3em;
+}
+
+article {
+    margin-bottom: 2.5em;
+}
+
+article .header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    color: #95a5a6;
+    font-size: 28px;
+}
+
+article .header .title,
+article .header .title a {
+    color: #95a5a6;
+    font-weight: bold;
+}
+
+article .header .title a:hover {
+    color: #16a085;
+}
+
+article .header .created-at {
+    background-color: #16A085;
+    color: rgba(255, 255, 255, .7);
+    font-size: 52%;
+    padding: 5px;
+    margin-left: 4px;
+    border-radius: 7px;
+}
+
+article .header .title,
+article .header .title a,
+article .header .created-at,
+article .header .controlButtons {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+article .tags {
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+article .tag {
+    display: inline-block;
+    padding: 5px;
+    color: rgba(255, 255, 255, .7);
+    background-color: #16a085;
+}
+
+form {
+    margin: 1.2em;
+}
+
+.form-group {
+    margin-bottom: 2em;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: .6em;
+}
+
+.form-control {
+    border: 2px solid #95a5a6;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2);
+    width: 100%;
+}
+
+.form-control:hover,
+.form-control:focus {
+    border-color: #16a085;
+}
+
+.btn {
+    border: none;
+    border-radius: 2px;
+    background-color: #16a085;
+    color: rgba(255, 255, 255, .7);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+}
+
+.btn:hover {
+    background-color: #1abc9c;
+}
+
+.form-control, .btn {
+    outline: none;
+    padding: 6px;
+    font-family: 'Lato', Tahoma, sans-serif;
+}
+
+.control-buttons {
+    float: right;
+}
+
+.control-buttons form {
+    margin: 0;
+    display: inline-block;
+}
+
+.control-buttons a,
+.control-buttons form button {
+    font-size: 18px;
+    margin-left: .5em;
+}
+
+.alert {
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1.5em auto 1.5em;
+    color: rgba(0, 0, 0, .4);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.alert a {
+    color: rgba(0, 0, 0, .4);
+}
+
+.alert a:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
+.alert-warning {
+    background-color: #f1c40f;
+}
+
+.alert-error {
+    background-color: #c0392b;
+}
+
+.alert-success {
+    background-color: #27ae60;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #95a5a6;
+}
+
+table thead tr th {
+    text-align: left;
+}
+
+table tr td, table thead tr th {
+    padding: 1em;
+    border-bottom: 1px solid #95a5a6;
+}
+
+footer {
+    font-weight: bold;
+    margin: 4px;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+{% extends 'install/layout.html.twig' %}
+
+{% block content %}
+    <h2>Please fill the below fields</h2>
+    {{ form_open('post', {'route': ['install.process']}) }}
+        {% include 'partials/flash.html.twig' %}
+        <div>
+            <label for="title">Title</label>
+            {{ form_text('title') }}
+        </div>
+        <div>
+            <label for="keywords">Keywords</label>
+            {{ form_text('keywords') }}
+        </div>
+        <div>
+            <label for="description">Description</label>
+            {{ form_text('description') }}
+        </div>
+        <div>
+            <label for="email">Admin's email</label>
+            {{ form_email('email') }}
+        </div>
+        <div>
+            <label for="password">Admin's password</label>
+            {{ form_password('password') }}
+        </div>
+        <div>
+            {{ form_button('Install', true) }}
+        </div>
+    {{ form_close() }}
+{% endblock %}

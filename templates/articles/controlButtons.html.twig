@@ -1,0 +1,9 @@
+<div class="control-buttons">
+    <a href="{{ urlFor("articles.edit", {"id": article.id}) }}">Edit</a>
+    <form action="{{ urlFor("articles.destroy", {"id": article.id}) }}" method="post">
+        <input type="hidden" name="_METHOD" value="DELETE" />
+        <button type="submit" class="btn" >
+            Delete
+        </button>
+    </form>
+</div>

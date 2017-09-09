@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{{ settings.keywords }}" />
+    <meta name="description" content="{{ settings.description }}" />
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <title>{{ title }}</title>
+    
+</head>
+<body>
+<header>
+    {% include 'partials/navbar.html.twig' %}
+</header>
+<div class="container">
+    {% include 'partials/flash.html.twig' %}
+    {% block content %}{% endblock %}
+</div>
+<footer>
+    Mathew Hany &copy; 2015
+</footer>
+</body>
+</html>

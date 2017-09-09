@@ -1,0 +1,21 @@
+<div class="form-group">
+    <label for="title">Title</label>
+    {{ form_text('title', null, {'class': 'form-control'}) }}
+</div>
+<div class="form-group">
+    <label for="content">Content</label>
+    {{ form_textarea('content') }}
+</div>
+<div class="form-group">
+	<label for="tags_list">Tags
+        <small>
+            (You can create new by press enter key after type the name of the tag)
+        </small>
+    </label>
+    {{ form_select('tags_list[]', tags, null, {'id': 'tags', 'class': 'form-control', 'multiple': true}) }}
+</div>
+<div class="form-group">
+    {{ form_button('Save', true, {'class': 'btn'}) }}
+</div>
+{% include 'partials/editor.html.twig' %}
+{% include 'partials/selectboxes.html.twig' %}

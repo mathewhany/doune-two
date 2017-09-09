@@ -1,0 +1,49 @@
+{% extends 'app.html.twig' %}
+
+{% block content %}
+    <h2>Settings</h2>
+    {{ form_model(settings, 'put', {'route': ['settings.update']}) }}
+        <div class="form-group">
+            <label for="title">Title</label>
+            {{ form_text('title', null, {'class': 'form-control'}) }}
+        </div>
+        <div class="form-group">
+            <label for="keywords">Keywords
+                <small>
+                    (Separate them with a comma (,). This helps search engines to archive your blog)
+                </small>
+            </label>
+            {{ form_text('keywords', null, {'class': 'form-control'}) }}
+        </div>
+        <div class="form-group">
+            <label for="description">Description
+                <small>
+                    (This helps search engines to archive your blog)
+                </small>
+            </label>
+            {{ form_text('description', null, {'class': 'form-control'}) }}
+        </div>
+        <div class="form-group">
+            <label for="default_theme">Default theme</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Default Theme</th>
+                        <th>Name</th>
+                        <th>Version</th>
+                    </tr>
+                </thead>
+                {% for uniqueName, theme in themes %}
+                    <tr>
+                        <td width="10%">{{ form_radio('default_theme', uniqueName) }}</td>
+                        <td>{{ theme.name }}</td>
+                        <td>{{ theme.version }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div class="form-group">
+            {{ form_button('Save', true, {'class': 'btn'}) }}
+        </div>
+    {{ form_close() }}
+{% endblock %}

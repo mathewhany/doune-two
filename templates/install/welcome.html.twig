@@ -1,0 +1,9 @@
+{% extends 'install/layout.html.twig' %}
+
+{% block content %}
+    <div class="msg">
+        <h2>Hi!</h2>
+        <p>Welcome to Doune Installation page, it will take one minute at most. Thanks for your patience. We hope you will enjoy using Doune. Click on (Install now) to begin the installation process.</p>
+        <a href="{{ urlFor('install.form') }}">Install now</a>
+    </div>
+{% endblock %}

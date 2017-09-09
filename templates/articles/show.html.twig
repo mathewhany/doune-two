@@ -1,0 +1,20 @@
+{% extends 'app.html.twig' %}
+
+{% block content %}
+    <article>
+        <div class="header">
+            <div class="title">{{ article.title }}</div>
+            {% include 'articles/controlButtons.html.twig' %}
+            <div class="created-at">{{ article.created_at }}</div>
+        </div>
+        <div class="content">{{ article.content|raw }}</div>
+        {% if tags is not empty %}
+            <div class="tags">
+                Tags »
+                {% for tag in tags %}
+                    <div class="tag">{{ tag }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </article>
+{% endblock %}
